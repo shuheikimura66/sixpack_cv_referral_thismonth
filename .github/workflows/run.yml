@@ -6,6 +6,8 @@ on:
 jobs:
   run-script:
     runs-on: ubuntu-latest
+    env:
+      TZ: Asia/Tokyo          # ← これを追加：ランナー全体のタイムゾーンをJSTに
     steps:
       - uses: actions/checkout@v3
 
